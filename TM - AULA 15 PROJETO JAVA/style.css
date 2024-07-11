@@ -1,0 +1,118 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container principal */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Título da lista de contatos */
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formulário de entrada de dados */
+#lista_contatos {
+    display: flex;
+    flex-direction: column;
+}
+
+#lista_contatos div {
+    margin-bottom: 15px;
+}
+
+#lista_contatos label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+#lista_contatos input[type="text"],
+#lista_contatos input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#lista_contatos button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#lista_contatos button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para os cards de contatos */
+.card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.card button {
+    background-color: #FF5722;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+.card button.editar {
+    background-color: #2196F3;
+}
+
+.card button.excluir {
+    background-color: #F44336;
+}
+
+.card button:hover {
+    background-color: #e64a19;
+}
